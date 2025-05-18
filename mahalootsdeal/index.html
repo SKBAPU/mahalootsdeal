@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahalootsdeal 🛒 Latest Deals</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background: #008cdd;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+    }
+
+    a {
+      color: #008cdd;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .telegram-join {
+      text-align: center;
+      padding: 15px;
+      background-color: #f9f9f9;
+    }
+
+    .telegram-join button {
+      margin-left: 10px;
+      padding: 6px 12px;
+      border: none;
+      background-color: #008cdd;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .telegram-join button:hover {
+      background-color: #0073b1;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      border: none;
+    }
+
+    .ticker {
+      margin: 0;
+      padding: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 12px;
+      background: #f1f1f1;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Mahalootsdeal 🛒</h1>
+    <p>Latest products from our Telegram channel</p>
+  </header>
+
+  <!-- Telegram Join -->
+  <div class="telegram-join">
+    <a href="https://t.me/mahalootsdeal/123" target="_blank">Join us on Telegram</a>
+    <button onclick="toggleTheme()">🌙</button>
+  </div>
+
+  <!-- Product Feed -->
+  <iframe
+    src="https://rss.app/embed/v1/list/YUgsJmQ6aEnIydk6"
+    height="600"
+    scrolling="no">
+  </iframe>
+
+  <!-- Ticker Bar -->
+  <iframe
+    class="ticker"
+    src="https://rss.app/embed/v1/ticker/81y9yPtE9tFnqrw6"
+    height="40"
+    scrolling="no">
+  </iframe>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mahalootsdeal. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="app.js"></script>
+</body>
+</html>
